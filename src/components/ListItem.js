@@ -10,7 +10,7 @@ if (Platform.OS === 'android') {
     UIManager.setLayoutAnimationEnabledExperimental(true);
 }
 class ListItem extends Component {
-    componentWillUpdate() {
+    UNSAFE_componentWillUpdate() {
         LayoutAnimation.spring();
     }
     renderDescription() {
